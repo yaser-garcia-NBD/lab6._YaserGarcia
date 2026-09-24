@@ -1,0 +1,18 @@
+name: autograde-lab6
+on:
+  push:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  calificar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0   # necesario para analizar el historial de commits
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Calificar y registrar entrega
+        run: python autograde/autograde.py
