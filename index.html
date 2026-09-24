@@ -4,17 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <meta name="description" content="Tienda de componentes electrónicos, accesorios, herramientas y servicios para proyectos de electrónica.">
     <meta name="author" content="Yaser Garcia">
     <meta name="codigo-sesion" content="LAB6-V9S3">
 
     <title>Tienda de componentes electrónicos</title>
 
+    <!-- CSS EXTERNO -->
     <link rel="stylesheet" href="css/estilos.css">
+
+    <!-- CSS INTERNO -->
+    <style>
+        .destacado {
+            color: #209726;
+            font-weight: bold;
+        }
+    </style>
+
+    <!-- JavaScript -->
+    <script src="js/app.js" defer></script>
 </head>
 
 <body>
 
+<noscript>
+    <p>
+        JavaScript está desactivado. La página puede visualizarse,
+        pero algunas funciones interactivas no estarán disponibles.
+    </p>
+</noscript>
+
 <header id="inicio">
+
     <h1>Tienda de componentes electrónicos</h1>
 
     <p>
@@ -22,17 +43,21 @@
     </p>
 
     <nav>
-        <a href="#inicio">Inicio</a> |
-        <a href="#productos">Productos</a> |
-        <a href="#tabla">Catálogo</a> |
+        <a href="#inicio">Inicio</a>
+        <a href="#productos">Productos</a>
+        <a href="#tabla">Catálogo</a>
+        <a href="#multimedia">Multimedia</a>
         <a href="#contacto">Contacto</a>
     </nav>
+
 </header>
 
 
 <main id="ficha-1940" class="k-f5afee">
 
+    <!-- PRESENTACIÓN -->
     <section id="presentacion">
+
         <h2>Bienvenido a nuestra tienda</h2>
 
         <p>
@@ -41,48 +66,90 @@
         </p>
 
         <p>
-            Tenemos microcontroladores, sensores, protoboards,
-            resistencias y otros accesorios.
+            Tenemos <strong>microcontroladores</strong>,
+            <em>sensores</em>, protoboards, resistencias y otros
+            accesorios.
         </p>
+
+        <p class="destacado" style="color:#209726;">
+            Calidad y variedad para tus proyectos electrónicos.
+        </p>
+
+        <p>
+            La placa <mark>Arduino UNO</mark> es una opción popular
+            para comenzar a desarrollar proyectos.
+            También puedes utilizar la función
+            <code>digitalWrite()</code> para controlar dispositivos.
+        </p>
+
+        <p>
+            Los componentes se identifican mediante diferentes
+            especificaciones técnicas.
+            <abbr title="Light Emitting Diode">LED</abbr> significa
+            diodo emisor de luz.
+        </p>
+
+        <p>
+            Última actualización:
+            <time datetime="2026-09-24">24 de septiembre de 2026</time>.
+            <small>Información sujeta a disponibilidad.</small>
+        </p>
+
     </section>
 
 
+    <!-- PRODUCTOS -->
     <section id="productos">
+
         <h2>Productos destacados</h2>
 
         <article>
             <h3>Arduino UNO</h3>
-            <p>Placa de desarrollo para proyectos electrónicos.</p>
+            <p>
+                Placa de desarrollo para proyectos electrónicos.
+            </p>
         </article>
 
         <article>
             <h3>Raspberry Pi</h3>
-            <p>Computadora compacta para proyectos y programación.</p>
+            <p>
+                Computadora compacta para proyectos y programación.
+            </p>
         </article>
 
         <article>
             <h3>ESP32</h3>
-            <p>Microcontrolador con conectividad Wi-Fi y Bluetooth.</p>
+            <p>
+                Microcontrolador con conectividad Wi-Fi y Bluetooth.
+            </p>
         </article>
 
         <article>
             <h3>Protoboard</h3>
-            <p>Base para realizar circuitos electrónicos sin soldadura.</p>
+            <p>
+                Base para realizar circuitos electrónicos sin soldadura.
+            </p>
         </article>
+
     </section>
 
 
+    <!-- TABLA -->
     <section id="tabla">
+
         <h2>Catálogo de componentes</h2>
 
-        <table border="1">
-            <caption>Componentes electrónicos disponibles</caption>
+        <table>
+
+            <caption>
+                Componentes electrónicos disponibles
+            </caption>
 
             <thead>
                 <tr>
-                    <th>Producto</th>
-                    <th>Categoría</th>
-                    <th>Precio</th>
+                    <th scope="col">Producto</th>
+                    <th scope="col">Categoría</th>
+                    <th scope="col">Precio</th>
                 </tr>
             </thead>
 
@@ -125,89 +192,60 @@
                 </tr>
 
             </tbody>
+
+            <tfoot>
+                <tr>
+                    <th scope="row" colspan="2">Cantidad de productos</th>
+                    <td>6</td>
+                </tr>
+            </tfoot>
+
         </table>
+
     </section>
 
 
+    <!-- SERVICIOS -->
     <section id="servicios">
+
         <h2>Servicios</h2>
 
         <article>
             <h3>Asesoría técnica</h3>
-            <p>Te ayudamos a seleccionar los componentes adecuados.</p>
+            <p>
+                Te ayudamos a seleccionar los componentes adecuados.
+            </p>
         </article>
 
         <article>
             <h3>Preparación de pedidos</h3>
-            <p>Organizamos los componentes necesarios para tus proyectos.</p>
+            <p>
+                Organizamos los componentes necesarios para tus proyectos.
+            </p>
         </article>
 
         <aside>
             <h3>Consejo</h3>
-            <p>Antes de comprar, verifica siempre las características técnicas.</p>
+            <p>
+                Antes de comprar, verifica siempre las características técnicas.
+            </p>
         </aside>
+
+        <details>
+            <summary>Consejos para comprar componentes electrónicos</summary>
+            <p>
+                Verifica voltaje, corriente, compatibilidad, dimensiones
+                y características técnicas antes de realizar una compra.
+            </p>
+        </details>
+
     </section>
 
 
-  <section id="multimedia">
-
-    <h2>Multimedia</h2>
-
-    <div class="multimedia-contenido">
-
-        <!-- IMAGEN DEL PROYECTO -->
-        <div class="multimedia-imagen">
-
-            <h3>Servicio técnico electrónico</h3>
-
-            <figure>
-                <img
-                    src="img/Gemini_Generated_Image_r6skx8r6skx8r6sk.jpg"
-                    alt="Técnico realizando reparación de componentes electrónicos"
-                >
-
-                <figcaption>
-                    Técnico trabajando con herramientas y componentes electrónicos.
-                </figcaption>
-            </figure>
-
-        </div>
-
-
-        <!-- VIDEO -->
-        <div class="multimedia-video">
-
-            <h3>Reparación de equipos electrónicos</h3>
-
-            <p>
-                En este video se muestra un proceso de reparación
-                de un equipo electrónico, relacionado con el trabajo
-                de diagnóstico y mantenimiento técnico.
-            </p>
-
-            <iframe
-                width="560"
-                height="315"
-                src="https://www.youtube.com/embed/5oW63-idxr4"
-                title="Reparación de una Sega Mega Drive"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen>
-            </iframe>
-
-            <p class="fuente-video">
-                Video: “Sega Mega Drive repair, it needs some love (and bodge wires!)”
-                — silvestron's bits and bytes.
-                Licencia: Creative Commons Attribution 3.0.
-            </p>
-
-        </div>
-
-    </div>
-
-</section>
-
+    <!-- LISTAS -->
     <section id="listas">
-        <h2>Información adicional</h2>
+
+        <h2>Tipos de componentes</h2>
 
         <h3>Componentes disponibles</h3>
 
@@ -218,177 +256,346 @@
             <li>Protoboards</li>
         </ul>
 
-        <h3>Pasos para comprar</h3>
+        <h3>Proceso de compra</h3>
 
         <ol>
-            <li>Seleccionar el producto.</li>
+            <li>Seleccionar el componente.</li>
             <li>Verificar sus características.</li>
-            <li>Enviar el formulario de contacto.</li>
+            <li>Realizar el pedido.</li>
         </ol>
 
-        <h3>Definiciones</h3>
+        <h3>Conceptos electrónicos</h3>
 
         <dl>
             <dt>Microcontrolador</dt>
             <dd>Dispositivo programable utilizado para controlar circuitos.</dd>
 
             <dt>Sensor</dt>
-            <dd>Dispositivo que detecta cambios en el entorno.</dd>
+            <dd>Componente que permite detectar diferentes magnitudes.</dd>
+
+            <dt>Protoboard</dt>
+            <dd>Base utilizada para realizar circuitos sin soldadura.</dd>
         </dl>
+
     </section>
 
 
-    <section id="contacto">
-        <h2>Contacto y comentarios</h2>
+    <!-- MULTIMEDIA -->
+    <section id="multimedia">
 
-        <form>
+        <h2>Multimedia</h2>
+
+        <div class="multimedia-contenido">
+
+            <div class="multimedia-imagen">
+
+                <h3>Servicio técnico electrónico</h3>
+
+                <figure>
+
+                    <img
+                        src="img/Gemini_Generated_Image_r6skx8r6skx8r6sk.jpg"
+                        alt="Técnico realizando reparación de componentes electrónicos"
+                        loading="lazy"
+                    >
+
+                    <figcaption>
+                        Técnico trabajando con herramientas y componentes electrónicos.
+                    </figcaption>
+
+                </figure>
+
+            </div>
+
+
+            <div class="multimedia-video">
+
+                <h3>Reparación de equipos electrónicos</h3>
+
+                <p>
+                    En este video se muestra un proceso de reparación
+                    de un equipo electrónico, relacionado con el diagnóstico
+                    y mantenimiento técnico.
+                </p>
+
+                <!-- VIDEO HTML5 -->
+                <video controls width="560" height="315">
+                    <source
+                        src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4"
+                        type="video/mp4"
+                    >
+                    Tu navegador no permite reproducir este video.
+                </video>
+
+                <p>
+                    Video HTML5 de demostración utilizado para comprobar
+                    la reproducción multimedia.
+                </p>
+
+                <!-- VIDEO EMBEBIDO -->
+                <iframe
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/5oW63-idxr4"
+                    title="Reparación de una Sega Mega Drive"
+                    loading="lazy"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+
+                <p class="fuente-video">
+                    Video: “Sega Mega Drive repair, it needs some love
+                    (and bodge wires!)” — silvestron's bits and bytes.
+                    Licencia: Creative Commons Attribution 3.0.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FORMULARIO -->
+    <section id="contacto">
+
+        <h2>Contacto</h2>
+
+        <form action="#contacto" method="post">
 
             <fieldset>
 
                 <legend>Formulario de contacto</legend>
 
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre">
+                <p>
+                    <label for="nombre">Nombre:</label>
+                    <input
+                        type="text"
+                        id="nombre"
+                        name="nombre"
+                        placeholder="Escribe tu nombre"
+                        autocomplete="given-name"
+                        minlength="2"
+                        maxlength="40"
+                        required
+                    >
+                </p>
 
-                <br><br>
+                <p>
+                    <label for="apellido">Apellido:</label>
+                    <input
+                        type="text"
+                        id="apellido"
+                        name="apellido"
+                        placeholder="Escribe tu apellido"
+                        autocomplete="family-name"
+                        required
+                    >
+                </p>
 
-                <label for="correo">Correo:</label>
-                <input type="email" id="correo" name="correo">
+                <p>
+                    <label for="correo">Correo electrónico:</label>
+                    <input
+                        type="email"
+                        id="correo"
+                        name="correo"
+                        placeholder="ejemplo@correo.com"
+                        autocomplete="email"
+                        required
+                    >
+                </p>
 
-                <br><br>
+                <p>
+                    <label for="telefono">Teléfono:</label>
+                    <input
+                        type="tel"
+                        id="telefono"
+                        name="telefono"
+                        placeholder="6000-0000"
+                        pattern="[0-9]{4}-[0-9]{4}"
+                        required
+                    >
+                </p>
 
-                <label for="telefono">Teléfono:</label>
-                <input type="tel" id="telefono" name="telefono">
+                <p>
+                    <label for="cantidad">Cantidad:</label>
+                    <input
+                        type="number"
+                        id="cantidad"
+                        name="cantidad"
+                        min="1"
+                        max="100"
+                        step="1"
+                        value="1"
+                        required
+                    >
+                </p>
 
-                <br><br>
+                <p>
+                    <label for="fecha">Fecha del pedido:</label>
+                    <input
+                        type="date"
+                        id="fecha"
+                        name="fecha"
+                        required
+                    >
+                </p>
 
-                <label for="fecha">Fecha:</label>
-                <input type="date" id="fecha" name="fecha">
+                <p>
+                    <label for="hora">Hora preferida:</label>
+                    <input
+                        type="time"
+                        id="hora"
+                        name="hora"
+                    >
+                </p>
 
-                <br><br>
+                <p>
+                    <label for="sitio">Sitio web:</label>
+                    <input
+                        type="url"
+                        id="sitio"
+                        name="sitio"
+                        placeholder="https://ejemplo.com"
+                    >
+                </p>
 
-                <label for="cantidad">Cantidad:</label>
-                <input type="number" id="cantidad" name="cantidad">
+                <p>
+                    <label for="color">Color preferido:</label>
+                    <input
+                        type="color"
+                        id="color"
+                        name="color"
+                        value="#209726"
+                    >
+                </p>
 
-                <br><br>
+                <p>
+                    <label for="nivel">Nivel de experiencia:</label>
+                    <input
+                        type="range"
+                        id="nivel"
+                        name="nivel"
+                        min="1"
+                        max="10"
+                        step="1"
+                        value="5"
+                    >
+                </p>
 
-                <label for="categoria">Categoría:</label>
+                <p>
+                    <label for="producto">Producto:</label>
+                    <input
+                        list="productos-lista"
+                        id="producto"
+                        name="producto"
+                        placeholder="Selecciona un producto"
+                        required
+                    >
 
-                <select id="categoria" name="categoria">
-                    <option>Microcontrolador</option>
-                    <option>Sensor</option>
-                    <option>Accesorio</option>
-                    <option>Componente</option>
-                </select>
+                    <datalist id="productos-lista">
+                        <option value="Arduino UNO">
+                        <option value="Raspberry Pi">
+                        <option value="ESP32">
+                        <option value="Sensor ultrasónico">
+                        <option value="Protoboard">
+                    </datalist>
+                </p>
 
-                <br><br>
+                <p>
+                    <strong>Tipo de cliente:</strong>
+                </p>
 
-                <p>Tipo de cliente:</p>
+                <p>
+                    <input
+                        type="radio"
+                        id="cliente-estudiante"
+                        name="cliente"
+                        value="estudiante"
+                        checked
+                    >
+                    <label for="cliente-estudiante">Estudiante</label>
 
-                <input type="radio" id="estudiante" name="cliente">
-                <label for="estudiante">Estudiante</label>
+                    <input
+                        type="radio"
+                        id="cliente-profesional"
+                        name="cliente"
+                        value="profesional"
+                    >
+                    <label for="cliente-profesional">Profesional</label>
+                </p>
 
-                <input type="radio" id="empresa" name="cliente">
-                <label for="empresa">Empresa</label>
+                <p>
+                    <input
+                        type="checkbox"
+                        id="aceptar"
+                        name="aceptar"
+                        value="si"
+                        required
+                    >
+                    <label for="aceptar">
+                        Acepto los términos de contacto.
+                    </label>
+                </p>
 
-                <br><br>
+                <p>
+                    <label for="comentarios">Comentarios:</label>
+                    <textarea
+                        id="comentarios"
+                        name="comentarios"
+                        rows="5"
+                        cols="40"
+                        placeholder="Escribe tu consulta aquí"
+                        maxlength="500"
+                    ></textarea>
+                </p>
 
-                <input type="checkbox" id="acepto" name="acepto">
-                <label for="acepto">Acepto los términos.</label>
-
-                <br><br>
-
-                <label for="comentario">Comentario:</label><br>
-
-                <textarea
-                    id="comentario"
-                    name="comentario"
-                    rows="5"
-                    cols="40">
-                </textarea>
-
-                <br><br>
-
-                <label for="color">Color:</label>
-                <input type="color" id="color" name="color">
-
-                <br><br>
-
-                <label for="nivel">Nivel:</label>
-                <input type="range" id="nivel" name="nivel">
-
-                <br><br>
-
-                <label for="web">Página web:</label>
-                <input type="url" id="web" name="web">
-
-                <br><br>
-
-                <label for="clave">Contraseña:</label>
-                <input type="password" id="clave" name="clave">
-
-                <br><br>
-
-                <input type="submit" value="Enviar">
-                <input type="reset" value="Limpiar">
+                <p>
+                    <button type="submit">Enviar formulario</button>
+                    <button type="reset">Limpiar</button>
+                </p>
 
             </fieldset>
 
         </form>
+
     </section>
 
 
+    <!-- INFORMACIÓN -->
     <section id="informacion">
-        <h2>Información técnica</h2>
+
+        <h2>Información adicional</h2>
 
         <p>
-            Los componentes electrónicos permiten construir circuitos
-            y sistemas para diferentes aplicaciones.
+            Esta tienda está orientada a estudiantes, aficionados
+            y profesionales de la electrónica.
         </p>
 
         <p>
-            Fórmula básica: V = I × R
+            Para consultas puedes utilizar el formulario de contacto.
         </p>
 
-        <p>
-            Horario de atención: <time>08:00</time> a
-            <time>17:00</time>.
-        </p>
     </section>
 
 </main>
 
 
-<aside id="sugerencias">
-    <h2>Sugerencia</h2>
-
-    <p>
-        Revisa las especificaciones de cada componente antes de utilizarlo.
-    </p>
-</aside>
-
-
 <footer>
 
-    <nav>
-        <a href="#inicio">Inicio</a> |
-        <a href="#productos">Productos</a> |
-        <a href="#contacto">Contacto</a>
-    </nav>
-
     <p>
-        &copy; 2026 Tienda de componentes electrónicos.
-        Yaser Garcia.
+        Autor: Yaser Garcia
     </p>
 
     <p>
         Código de sesión: LAB6-V9S3
     </p>
 
+    <p>
+        Tienda de componentes electrónicos
+    </p>
+
 </footer>
-
-
-<script src="js/app.js"></script>
 
 </body>
 </html>
