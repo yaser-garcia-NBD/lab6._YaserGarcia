@@ -11,7 +11,19 @@
     <title>Tienda de componentes electrónicos</title>
 
     <link rel="stylesheet" href="css/estilos.css">
+
+    <!-- CSS interno -->
+    <style>
+        .destacado {
+            font-weight: bold;
+            padding: 10px;
+        }
+    </style>
+
+    <!-- JavaScript externo -->
+    <script src="js/app.js" defer></script>
 </head>
+
 <body>
 
 <noscript>
@@ -305,7 +317,6 @@
                     y mantenimiento técnico.
                 </p>
 
-                <!-- VIDEO HTML5 -->
                 <video controls width="560" height="315">
                     <source
                         src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4"
@@ -319,7 +330,6 @@
                     la reproducción multimedia.
                 </p>
 
-                <!-- VIDEO EMBEBIDO -->
                 <iframe
                     width="560"
                     height="315"
@@ -489,6 +499,17 @@
                     </datalist>
                 </p>
 
+                <!-- SELECT AGREGADO -->
+                <p>
+                    <label for="categoria">Categoría del producto:</label>
+                    <select id="categoria" name="categoria">
+                        <option value="microcontrolador">Microcontrolador</option>
+                        <option value="sensor">Sensor</option>
+                        <option value="accesorio">Accesorio</option>
+                        <option value="componente">Componente</option>
+                    </select>
+                </p>
+
                 <p>
                     <strong>Tipo de cliente:</strong>
                 </p>
@@ -520,6 +541,7 @@
                         value="si"
                         required
                     >
+
                     <label for="aceptar">
                         Acepto los términos de contacto.
                     </label>
